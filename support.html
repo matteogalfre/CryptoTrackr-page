@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTrackr - Support</title>
+    <meta name="description" content="Support and FAQ for CryptoTrackr - Crypto Portfolio Tracker App">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --surface: #13131a;
+            --border: #2a2a3a;
+            --text: #ffffff;
+            --text-secondary: #a0a0b0;
+            --primary: #a3e635;
+            --primary-muted: rgba(163, 230, 53, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, var(--primary), #84cc16);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+        }
+
+        .faq-item {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .faq-item:first-child {
+            padding-top: 0;
+        }
+
+        .contact-box {
+            background: var(--primary-muted);
+            border: 1px solid rgba(163, 230, 53, 0.3);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .contact-box a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: var(--text-secondary);
+            font-size: 14px;
+            border-top: 1px solid var(--border);
+            margin-top: 48px;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin: 0 16px;
+            font-size: 14px;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 16px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">📊</div>
+            <h1>CryptoTrackr</h1>
+            <p class="subtitle">Support & FAQ</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Privacy Policy</a>
+            <a href="support.html" class="active">Support</a>
+        </nav>
+
+        <div class="card">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>How do I add a transaction?</h3>
+                <p>Tap the "Add" tab at the bottom of the screen. Select your cryptocurrency, enter the amount, choose the date, and tap "Add Transaction".</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Where does the price data come from?</h3>
+                <p>CryptoTrackr uses Binance's public API to fetch real-time cryptocurrency prices. Binance is the world's largest crypto exchange, ensuring reliable and accurate pricing data.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is my data safe?</h3>
+                <p>Yes! All your data is stored locally on your device. We don't have servers or databases - your portfolio information never leaves your phone.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I backup my data?</h3>
+                <p>Go to Settings → Backup & Restore → Export Backup. This will create a JSON file that you can save to your preferred location (Google Drive, email, etc.).</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I restore my data on a new phone?</h3>
+                <p>Install CryptoTrackr on your new phone, go to Settings → Backup & Restore → Import Backup, and select your previously exported JSON file.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I change the display currency?</h3>
+                <p>Go to Settings → Preferences → Currency. You can choose from USD, EUR, GBP, CHF, CAD, AUD, JPY, or CNY.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I generate a tax report?</h3>
+                <p>Go to Settings → Tax Reports → Generate Report. Select the year and calculation method (FIFO or LIFO), then export to CSV.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What's the difference between FIFO and LIFO?</h3>
+                <p><strong>FIFO (First In, First Out)</strong>: Assumes you sell your oldest coins first.<br>
+                <strong>LIFO (Last In, First Out)</strong>: Assumes you sell your most recent coins first.<br>
+                Check with your tax advisor which method is appropriate for your jurisdiction.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why can't I find a specific cryptocurrency?</h3>
+                <p>CryptoTrackr supports 500+ cryptocurrencies that are listed on Binance. If a coin isn't available, it may not be traded on Binance or may be listed under a different symbol.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I add the widget to my home screen?</h3>
+                <p>Long-press on your home screen → Widgets → Find CryptoTrackr → Drag the widget to your desired location.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>The app shows "Price unavailable" - what should I do?</h3>
+                <p>This usually means there's no internet connection or Binance API is temporarily unavailable. Check your connection and try again. The app will automatically retry when connection is restored.</p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h2>Still need help?</h2>
+            <p style="color: var(--text); margin-bottom: 16px;">Contact us and we'll get back to you as soon as possible.</p>
+            <a href="mailto:studios.vibelabs@gmail.com">studios.vibelabs@gmail.com</a>
+        </div>
+
+        <footer>
+            <p>© 2026 VibeLabs. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="index.html">Privacy Policy</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
